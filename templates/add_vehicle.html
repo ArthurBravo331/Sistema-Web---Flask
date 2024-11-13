@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adicionar Veículo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Adicionar Veículo</h2>
+        <form method="POST">
+            <div class="mb-3">
+                <label for="license_plate" class="form-label">Placa do Veículo</label>
+                <input type="text" class="form-control" id="license_plate" name="license_plate" required>
+            </div>
+            <div class="mb-3">
+                <label for="parking_spot" class="form-label">Vaga de Estacionamento</label>
+                <input type="number" class="form-control" id="parking_spot" name="parking_spot" required>
+            </div>
+            <button type="submit" class="btn btn-success">Salvar</button>
+            <a href="{{ url_for('home') }}" class="btn btn-secondary">Cancelar</a>
+        </form>
+    </div>
+</body>
+</html>
